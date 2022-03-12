@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookstore.Models
 {
-    public class Cart
+    public class Carts
     {
         public List<CartLineItem > Items { get; set; } = new List<CartLineItem>();
 

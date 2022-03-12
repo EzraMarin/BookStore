@@ -10,9 +10,9 @@ namespace Bookstore.Controllers
     public class CheckoutController : Controller
     {
         private ICheckoutRepository repo { get; set; }
-        private Cart cart { get; set; }
+        private Carts cart { get; set; }
 
-        public CheckoutController (ICheckoutRepository temp, Cart c)
+        public CheckoutController (ICheckoutRepository temp, Carts c)
         {
             repo = temp;
             cart = c;

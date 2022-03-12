@@ -6,8 +6,7 @@ namespace Bookstore.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-           
-
+            
             migrationBuilder.CreateTable(
                 name: "Checkouts",
                 columns: table => new
@@ -20,7 +19,8 @@ namespace Bookstore.Migrations
                     City = table.Column<string>(nullable: false),
                     State = table.Column<string>(nullable: false),
                     Zip = table.Column<int>(nullable: false),
-                    Country = table.Column<string>(nullable: false)
+                    Country = table.Column<string>(nullable: false),
+                    OrderShipped = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

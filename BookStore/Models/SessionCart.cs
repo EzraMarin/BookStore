@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Bookstore.Models
 {
-    public class SessionCart : Cart
+    public class SessionCart : Carts
     {
-        public static Cart GetCart (IServiceProvider services)
+        public static Carts GetCart (IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 
